@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="shortcut icon" type="imagex/png" href="_imagens/glass-oculos-preto-peq.ico">
+    <title>Página inicial</title>
+    <link rel="stylesheet" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/media.css"/>
+</head>
+
+<body>
+    <h1> Bem-vindos</h1>
+    <p>Esta é área de login utilize seu login e senha para poder entra no site.</p>
+    <label for="login">Login: </label>
+    
+    <br>
+    <input id="login" type="email"  placeholder="Digite seu login!" maxlength="30" value=" " >
+    <br>
+    <br>
+
+    <label for="senha">Senha: </label><br>
+
+    <input id="senha" type="number"  aria-label="senha"placeholder="Digite sua senha!" maxlength="6" value="" max="999">
+
+    <button type="button" onclick="valores()"> Entrar </button>
+    <br>
+    <br>
+
+   <nav id="fun">
+    <li id="sdr">
+        <p id="result" style="display: none;">
+             <a href="index.html">Entre no site atravéz deste link</a> 
+        </p></li>
+</nav>
+    <script>
+        function valores(){
+            var log = document.getElementById('login').value;
+            var pass = document.getElementById('senha').value;
+            var valSenha = "1221"
+            var valLogin = "samuel.clipes@gmail.com"
+
+            if ( valSenha == pass || valLogin == log){             
+                alert('seu login foi um sucesso acesse o link de entrada');
+                document.getElementById('result').style.display="block";
+            }
+            else  {
+                alert('Senha ou login insirido incorretamente atualize a página e tente novamente.');
+            }
+        }
+        
+           
+        </script>
+      
+       
+                
+                
+   
+     
+            
+</body>
+
+</html>
